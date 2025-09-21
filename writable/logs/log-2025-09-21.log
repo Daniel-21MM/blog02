@@ -1,0 +1,37 @@
+CRITICAL - 2025-09-21 22:48:31 --> CodeIgniter\HTTP\Exceptions\HTTPException: No se puede encontrar la ruta /home mientras se realiza el enrutamiento inverso.
+[Method: GET, Route: edit/200]
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 63.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(63): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/home')
+ 2 SYSTEMPATH\Common.php(851): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\BlogController.php(117): redirect('/home')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BlogController->edit('200')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\blog\\public\\index.php')
+CRITICAL - 2025-09-21 22:48:45 --> CodeIgniter\HTTP\Exceptions\HTTPException: No se puede encontrar la ruta /home mientras se realiza el enrutamiento inverso.
+[Method: GET, Route: edit/20]
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 63.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(63): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/home')
+ 2 SYSTEMPATH\Common.php(851): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\BlogController.php(117): redirect('/home')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BlogController->edit('20')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\blog\\public\\index.php')
+CRITICAL - 2025-09-21 23:16:22 --> ErrorException: Array to string conversion
+[Method: GET, Route: delete/2]
+in APPPATH\Controllers\BlogController.php on line 221.
+ 1 APPPATH\Controllers\BlogController.php(221): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\blog\\app\\Controllers\\BlogController.php', 221)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BlogController->delete('2')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\blog\\public\\index.php')
